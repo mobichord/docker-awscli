@@ -1,6 +1,6 @@
 FROM alpine:edge
 
-RUN apk -v --no-cache --update add python3 groff less mailcap && \
+RUN apk -v --no-cache --update add python3 groff less mailcap curl && \
     python3 -m ensurepip && \
     rm -r /usr/lib/python*/ensurepip && \
     pip3 install --upgrade pip setuptools && \
